@@ -2,8 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Electron Kickstart</title>
-
+  <title>Mini App</title>
   <style>
     body {
       margin: 0;
@@ -19,9 +18,16 @@
 <body>
 
   <main>
-    <h1>Hallo Electron</h1>
-    <p>HTML, CSS und JavaScript als Desktop-App.</p>
+    <h1>pywebview</h1>
+    <button onclick="fragePython()">Python fragen</button>
+    <p id="antwort"></p>
   </main>
+
+  <script>
+    async function fragePython() {
+      antwort.textContent = await pywebview.api.hallo();
+    }
+  </script>
 
 </body>
 </html>

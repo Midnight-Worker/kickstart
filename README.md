@@ -1,5 +1,7 @@
 ## Neues Projekt aus einem Kickstart erstellen
 
+wget -qO- "https://raw.githubusercontent.com/Midnight-Worker/kickstart/scripts/test.py" | python
+
 ```bash
 git clone git@github.com:Midnight-Worker/kickstart.git mein-projekt
 cd mein-projekt
@@ -30,6 +32,7 @@ Kickstart Branches:
   pyxel
   react
   sdl2
+  scripts
   tailwind
   tcp
   tkinter
@@ -38,3 +41,4 @@ Kickstart Branches:
   web-min
   webview
   ws
+

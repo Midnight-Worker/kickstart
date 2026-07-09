@@ -1,0 +1,8 @@
+echo -e "\033[30mschwarz\033[0m"
+echo -e "\033[31mrot\033[0m"
+echo -e "\033[32mgrün\033[0m"
+echo -e "\033[33mgelb\033[0m"
+echo -e "\033[34mblau\033[0m"
+echo -e "\033[35mmagenta\033[0m"
+echo -e "\033[36mcyan\033[0m"
+echo -e "\033[37mweiß\033[0m"

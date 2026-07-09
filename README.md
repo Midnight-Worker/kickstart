@@ -20,3 +20,9 @@ git switch [branch]
 - pygame
 - sdl2
 - c64
+
+- React
+- express
+- ws
+- Jquery
+- mvc

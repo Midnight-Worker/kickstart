@@ -1,28 +1,40 @@
-# kickstart
+## Neues Projekt aus einem Kickstart erstellen
 
-Branches:
+```bash
+git clone git@github.com:Midnight-Worker/kickstart.git mein-projekt
+cd mein-projekt
 
-git switch --orphan [new-branch]
-git rm  -rf .
+git switch pygame
 
-git switch [branch]
+rm -rf .git
+git init
+git add .
+git commit -m "init"
 
-- v-web (vanilla: html5, css, javascript)
-- b-web (Bootstrap)
-- t-web (Tailwind)
-- react
-- electron
-- express
-- webview
-- kivy
-- tkinter
-- pyxel
-- pygame
-- sdl2
-- c64
 
-- React
-- express
-- ws
-- Jquery
-- mvc
+Kickstart Branches:
+
+  bootstrap4
+  canvas
+  electron
+  express
+  kivy
+* main
+  mvc
+  ncurses
+  prg
+  pycurses
+  pygame
+  pywsclient
+  pywsserver
+  pyxel
+  react
+  sdl2
+  tailwind
+  tcp
+  tkinter
+  ttkbootstrap
+  web
+  web-min
+  webview
+  ws

@@ -1,0 +1,5 @@
+# die wichtigsten urls
+
+https://git@github.com/Midnight-Workker
+https://raw.githubusercontent/Midnight-Worker/kickstart/main/info.txt
+https://Midnight-Worker.github.io

@@ -9,6 +9,7 @@ auswahl=$(dialog \
     16 60 6 \
     bash    "Normale Bash verwenden" \
     ipython "Interaktive Python-Shell" \
+    chrome  "Chrome & Playwright" \
     lf      "Dateimanager starten" \
     vifm    "Vifm Filemanager" \
     vim     "Vim mit NERDTree starten" \
@@ -25,6 +26,12 @@ case "$auswahl" in
 
     ipython)
         python -m IPython
+        ;;
+
+    chrome)
+        python -m IPython \
+            -i \
+            -c "%run /c/Users/maikt/session.py"
         ;;
 
     lf)

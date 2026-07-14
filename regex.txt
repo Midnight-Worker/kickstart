@@ -1,0 +1,12 @@
+^   Zeilenanfang
+$   Zeilenende
+.   genau ein beliebiges Zeichen
+*   vorheriges Muster 0-mal oder öfter
++   vorheriges Muster 1-mal oder öfter
+?   vorheriges Muster 0-mal oder 1-mal
+[]  genau ein Zeichen aus einer Auswahl
+[^] genau ein Zeichen, das nicht in der Auswahl ist
+()  Gruppe
+|   oder
+{}  genaue Anzahl oder Bereich
+\   Sonderzeichen maskieren

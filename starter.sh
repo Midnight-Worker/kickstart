@@ -9,7 +9,8 @@ auswahl=$(dialog \
     16 60 6 \
     bash    "Normale Bash verwenden" \
     ipython "Interaktive Python-Shell" \
-    ranger  "Dateimanager starten" \
+    lf      "Dateimanager starten" \
+    vifm    "Vifm Filemanager" \
     vim     "Vim mit NERDTree starten" \
     exit    "Terminal schließen"
 )
@@ -26,8 +27,12 @@ case "$auswahl" in
         python -m IPython
         ;;
 
-    ranger)
+    lf)
         lf
+        ;;
+
+    vifm)
+        vifm
         ;;
 
     vim)

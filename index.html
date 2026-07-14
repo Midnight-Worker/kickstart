@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Users</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>E-Mail</th>
+            </tr>
+        </thead>
+
+        <tbody id="users"></tbody>
+    </table>
+
+    <script>
+        window.addEventListener("pywebviewready", async () => {
+            const users = await pywebview.api.get_users();
+            const tbody = document.querySelector("#users");
+
+            for (const user of users) {
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+                    <td>${user.id}</td>
+                    <td>${user.name}</td>
+                    <td>${user.email}</td>
+                `;
+
+                tbody.append(row);
+            }
+        });
+    </script>
+</body>
+</html>

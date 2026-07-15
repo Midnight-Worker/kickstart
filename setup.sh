@@ -123,8 +123,8 @@ install_qt()
     echo "========================================"
 
     pacman -S --needed --noconfirm \
-        mingw-w64-ucrt-x86_64-qt6-base \
-        mingw-w64-ucrt-x86_64-qt6-declarative
+        mingw-w64-x86_64-qt6-base \
+        mingw-w64-x86_64-qt6-declarative
 }
 
 install_compiler()
@@ -135,9 +135,9 @@ install_compiler()
     echo "========================================"
 
     pacman -S --needed --noconfirm \
-        mingw-w64-ucrt-x86_64-gcc \
-        mingw-w64-ucrt-x86_64-gdb \
-        mingw-w64-ucrt-x86_64-make \
+        mingw-w64-x86_64-gcc \
+        mingw-w64-x86_64-gdb \
+        mingw-w64-x86_64-make \
         make
 }
 
@@ -149,8 +149,8 @@ install_python()
     echo "========================================"
 
     pacman -S --needed --noconfirm \
-        mingw-w64-ucrt-x86_64-python \
-        mingw-w64-ucrt-x86_64-python-pip
+        mingw-w64-x86_64-python \
+        mingw-w64-x86_64-python-pip
 }
 
 install_nodejs()
@@ -161,8 +161,8 @@ install_nodejs()
     echo "========================================"
 
     pacman -S --needed --noconfirm \
-        mingw-w64-ucrt-x86_64-nodejs \
-        mingw-w64-ucrt-x86_64-npm
+        mingw-w64-x86_64-nodejs \
+        mingw-w64-x86_64-npm
 }
 
 install_editors()
@@ -234,6 +234,10 @@ dialog \
     </dev/tty
 
 clear
+
+cp /tmp/mw-setup.sh /home/$USER/setup.sh
+echo 'alias inst="/home/$USER/setup.sh"' >> ~/.bashrc
+source ~/.bashrc
 
 echo "========================================"
 echo " Installation abgeschlossen"
